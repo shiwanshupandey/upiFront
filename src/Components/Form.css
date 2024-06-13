@@ -1,32 +1,109 @@
 /* Form.css */
 
+
+.parallax-section {
+  height: auto; /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-section .parallax-bg {
+  background-image: url('../../public//parallaxeffeect.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Ensures the parallax effect */
+  height: 100%; /* Height of the parallax container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure the parallax stays in the background */
+  opacity: 0.3; /* Adjust the opacity as needed */
+}
+
+
 form {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 30px;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 form label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #333;
+  color: #005ff9;
 }
+
+.Form-headingtext{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 3.5rem;
+}
+
+.form-image {
+  display: block;
+  margin: 0 auto 20px; /* Center the image and add space below it */
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.form-background {
+  background-image: url('../../public/imageForm.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Optional: Add a dark overlay for better text visibility */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.form-headingtext {
+  font-size: 3em;
+  margin: 0;
+}
+
+.form-description {
+  font-size: 1.2em;
+  margin: 15px 0 0;
+}
+
+
+
+
+
 
 form input[type="text"],
 form input[type="date"],
 form input[type="tel"],
 form input[type="email"],
 form select {
-  width: 100%;
-  padding: 10px;
+  width: 80%;
+  padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 0.4px solid #ccc;
+  border-radius: 17px;
   font-size: 16px;
 }
 
@@ -34,18 +111,18 @@ form select {
   appearance: none; /* Remove default arrow in some browsers */
   background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><path d="M6 9l6 6 6-6"/></svg>') no-repeat right 10px center;
   background-color: #fff;
-  background-size: 10px;
+  background-size: 15px;
   cursor: pointer;
 }
 
 form select option {
-  padding: 10px;
+  padding: 20px;
   font-size: 16px;
   background-color: #fff;
 }
 
 form select option:hover {
-  background-color: #f1f1f1;
+  background-color: #005ff9;
 }
 
 form button {
@@ -82,25 +159,163 @@ form button:hover {
 }
 
 .confirmation-message h2 {
-  color: #4CAF50;
+  color: #005ff9;
 }
 
+.checkboxform-Contain{
+  text-align: left;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 17px;
+}
+
+.qr-code-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+.qr-code {
+  width: 300px !important; /* Add !important to override any inline styles */
+  height: 300px !important; /* Add !important to override any inline styles */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
 @media (max-width: 768px) {
+  .parallax-section {
+    height: auto; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .parallax-section .parallax-bg {
+    background-image: url('../../public//parallaxeffeect.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the parallax effect */
+    height: 100%; /* Height of the parallax container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure the parallax stays in the background */
+    opacity: 0.3; /* Adjust the opacity as needed */
+  }
+  
+  
   form {
-    padding: 15px;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #005ff9;
+  }
+  
+  .Form-headingtext{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    text-align: left;
+    margin-left: -0.4rem;
+
+  }
+  
+  .form-image {
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add space below it */
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  .form-background {
+    background-image: url('../../public/imageForm.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+  }
+  
+  .form-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Optional: Add a dark overlay for better text visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .form-headingtext {
+    font-size: 1.4em;
+    margin: 0;
+  }
+  
+  .form-description {
+    font-size: 0.8em;
+    margin: 15px 0 0;
   }
 
-  form label,
   form input[type="text"],
   form input[type="date"],
   form input[type="tel"],
   form input[type="email"],
   form select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
     font-size: 14px;
+    margin-left: -14px;
   }
 
   form button {
-    padding: 8px;
+    padding: 5px;
     font-size: 14px;
+  }
+
+  form select option {
+    font-size: 10px;
+  }
+
+  .error {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+  }
+
+  .confirmation-message {
+    padding: 10px;
+  }
+
+  .checkboxform-Contain {
+    margin-left: 1rem;
+    font-size: 14px;
+  }
+
+  .qr-code-container {
+    padding: 25px;
+  }
+
+  .qr-code {
+    width: 150px !important;
+    height: 150px !important;
   }
 }
