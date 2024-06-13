@@ -9,7 +9,7 @@ async function sendToGoogleSpreadsheet(formData, file) {
   data.append('formData', JSON.stringify(formData));
   data.append('file', file);
 
-  const response = await fetch('https://upi-test.vercel.app/', {
+  const response = await fetch('https://upi-test-7ozdnnjww-shiwanshuanooppandeygmailcoms-projects.vercel.app/', {
     method: 'POST',
     body: data,
   });
