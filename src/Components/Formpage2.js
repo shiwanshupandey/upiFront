@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, Link, useNavigate } from 'react-router-dom';
 import QRCode from 'qrcode.react';
 import "./Form.css";
 import { Parallax } from 'react-parallax';
@@ -72,8 +72,9 @@ function FormPage2() {
       <Parallax strength={800} bgImage="/parallaxeffeect.jpg" className="parallax-section">
         {submitted ? (
           <div className="confirmation-message">
-     <img src="./FormDone.jpg" alt="Success Image" className="success-image" />
+            <img src="./FormDone.jpg" alt="Success Image" className="success-image" />
             <h2>Form Submitted Successfully!</h2>
+            <Link to="/" className="submit-another-link">Submit Another Form</Link>
           </div>
         ) : (
           <>
