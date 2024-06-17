@@ -35,7 +35,7 @@ function FormPage2() {
   useEffect(() => {
     // Check if formData is not available and redirect to Page 1
     if (!formData) {
-      navigate('/'); // Redirect to Page 1
+      navigate('/page1'); // Redirect to Page 1
     }
   }, [formData, navigate]);
 
@@ -74,7 +74,7 @@ function FormPage2() {
           <div className="confirmation-message">
             <img src="./FormDone.jpg" alt="Success Image" className="success-image" />
             <h2>Form Submitted Successfully!</h2>
-            <Link to="/" className="submit-another-link">Submit Another Form</Link>
+            <Link to="/page1" className="submit-another-link">Submit Another Form</Link>
           </div>
         ) : (
           <>
