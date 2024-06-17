@@ -1,0 +1,88 @@
+/* Existing CSS */
+
+.Intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto; /* add this line to allow scrolling */
+    /* remove the height property to allow the container to expand to fit its content */
+  }
+  
+  .video-responsive {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px; /* adjust as needed */
+    padding-top: 36.25%; /* for 16:9 aspect ratio */
+  }
+  
+  .video-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Link-pages {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .Link-pages:hover {
+    color: #007BFF;
+    text-decoration: underline;
+  }
+  
+  .Link-pages .fa-icon {
+    margin-right: 5px;
+  }
+
+  .ogcs-logo {
+    width: 200px; /* adjust as needed */
+    height: auto; /* maintain aspect ratio */
+    display: block; /* center the image */
+    margin: 20px auto; /* add vertical margin and center the image */
+    margin-bottom: 2rem;
+  }
+  
+
+  .Why-Course {
+    padding: 20px;
+    background-color: #fff; /* adjust as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adjust as needed */
+    margin: 20px 0;
+    border-radius: 15px; /* adjust as needed */
+    width: 50%; /* adjust as needed */
+  }
+  
+  .WhyHeading {
+    font-size: 24px; /* adjust as needed */
+    color: #333; /* adjust as needed */
+    text-align: center;
+  }
+  
+  .WhyPara {
+    font-size: 16px; /* adjust as needed */
+    color: #666; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    text-align: justify;
+  }
+  /* New CSS for 786px viewport */
+  
+  @media (max-width: 786px) {
+    .video-responsive {
+      max-width: 90%; /* adjust as needed */
+      padding-top: 50.625%; /* adjust for new aspect ratio if needed */
+    }
+  
+    .Link-pages {
+      font-size: 20px; /* adjust as needed */
+    }
+  }
