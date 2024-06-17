@@ -195,6 +195,18 @@ form button:hover {
   margin-right: auto; /* Center horizontally */
 }
 
+.submit-another-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #007bff; /* Blue color */
+  text-decoration: none;
+}
+
+.submit-another-link:hover {
+  text-decoration: underline;
+}
+
 
 
 @media (max-width: 768px) {
