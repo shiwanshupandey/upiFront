@@ -155,7 +155,6 @@ form button:hover {
   text-align: center;
   padding: 20px;
   background-color: #fff;
-  border: 1px solid #000;
   border-radius: 10px;
 }
 
@@ -188,7 +187,7 @@ form button:hover {
 /* Form.css */
 
 .success-image {
-  width: 200px; /* Adjust width as needed */
+  width: 500px; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 20px; /* Add space below the image */
   display: block; /* Ensure it's displayed as a block element */
