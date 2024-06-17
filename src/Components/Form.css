@@ -185,6 +185,18 @@ form button:hover {
   border-radius: 5px;
 }
 
+/* Form.css */
+
+.success-image {
+  width: 200px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add space below the image */
+  display: block; /* Ensure it's displayed as a block element */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+
 
 @media (max-width: 768px) {
   .parallax-section {
