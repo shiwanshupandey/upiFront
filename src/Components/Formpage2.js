@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import QRCode from 'qrcode.react';
 import "./Form.css";
 import { Parallax } from 'react-parallax';
@@ -26,12 +26,17 @@ async function sendToGoogleSpreadsheet(formData, file) {
 
 function FormPage2() {
   const location = useLocation();
+  const navigate = useNavigate(); // Initialize useNavigate for redirection
   const { formData } = location.state || {};
   const [file, setFile] = useState(null);
   const [submitted, setSubmitted] = useState(false);
-  // const [amount, setAmount] = useState('');
 
-  // amount = 256.00;
+  useEffect(() => {
+    // Check if formData is not available and redirect to Page 1
+    if (!formData) {
+      navigate('/page1'); // Redirect to Page 1
+    }
+  }, [formData, navigate]);
 
   const generateUPIQRCode = () => {
     const { name } = formData;
@@ -45,10 +50,6 @@ function FormPage2() {
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
   };
-
-  // const handleAmountChange = (e) => {
-  //   setAmount(e.target.value);
-  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -64,32 +65,22 @@ function FormPage2() {
   return (
     <div>
       <Parallax strength={800} bgImage="/parallaxeffeect.jpg" className="parallax-section">
-      {submitted ? (
-        <div className="confirmation-message">
-          <h2>Form Submitted Successfully!</h2>
-        </div>
-      ) : (
-        <>
-          <div className="qr-code-container">
+        {submitted ? (
+          <div className="confirmation-message">
+            <h2>Form Submitted Successfully!</h2>
+          </div>
+        ) : (
+          <>
+            <div className="qr-code-container">
               <QRCode value={generateUPIQRCode()} className="qr-code" />
             </div>
 
-          <form onSubmit={handleSubmit}>
-            {/* <label>
-              Select Amount:
-              <select value={amount} onChange={handleAmountChange}>
-                <option value="">Select</option>
-                <option value="10">10</option>
-                <option value="20">20</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-              </select>
-            </label> */}
-            <input type="file" accept="image/*" onChange={handleFileChange} />
-            <button type="submit">Submit</button>
-          </form>
-        </>
-      )}
+            <form onSubmit={handleSubmit}>
+              <input type="file" accept="image/*" onChange={handleFileChange} />
+              <button type="submit">Submit</button>
+            </form>
+          </>
+        )}
       </Parallax>
     </div>
   );
