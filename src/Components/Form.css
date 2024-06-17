@@ -154,8 +154,8 @@ form button:hover {
 .confirmation-message {
   text-align: center;
   padding: 20px;
-  background-color: #e0ffe0;
-  border: 1px solid #b2d8b2;
+  background-color: #fff;
+  border: 1px solid #000;
   border-radius: 10px;
 }
 
