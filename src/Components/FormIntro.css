@@ -76,13 +76,37 @@
   }
   /* New CSS for 786px viewport */
   
-  @media (max-width: 786px) {
-    .video-responsive {
-      max-width: 90%; /* adjust as needed */
-      padding-top: 50.625%; /* adjust for new aspect ratio if needed */
-    }
-  
-    .Link-pages {
-      font-size: 20px; /* adjust as needed */
-    }
+@media (max-width: 786px) {
+  .Intro-container {
+    padding: 10px; /* add some padding on smaller screens */
   }
+
+  .video-responsive {
+    max-width: 90%; /* adjust as needed */
+    padding-top: 50.625%; /* adjust for new aspect ratio if needed */
+  }
+
+  .Link-pages {
+    font-size: 20px; /* adjust as needed */
+    flex-direction: column; /* stack the links vertically */
+    align-items: flex-start; /* align to the start */
+  }
+
+  .ogcs-logo {
+    width: 150px; /* adjust as needed */
+    margin: 10px auto; /* reduce vertical margin and center the image */
+  }
+
+  .Why-Course {
+    width: 100%; /* make the course container take up the full width */
+    padding: 10px; /* reduce padding on smaller screens */
+  }
+
+  .WhyHeading {
+    font-size: 20px; /* reduce font size on smaller screens */
+  }
+
+  .WhyPara {
+    font-size: 14px; /* reduce font size on smaller screens */
+  }
+}
