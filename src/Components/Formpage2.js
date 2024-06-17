@@ -34,7 +34,7 @@ function FormPage2() {
   useEffect(() => {
     // Check if formData is not available and redirect to Page 1
     if (!formData) {
-      navigate('/page1'); // Redirect to Page 1
+      navigate('/'); // Redirect to Page 1
     }
   }, [formData, navigate]);
 
