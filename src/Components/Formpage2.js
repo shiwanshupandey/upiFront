@@ -30,6 +30,7 @@ function FormPage2() {
   const { formData } = location.state || {};
   const [file, setFile] = useState(null);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false); // Loading state for form submission
 
   useEffect(() => {
     // Check if formData is not available and redirect to Page 1
@@ -53,12 +54,16 @@ function FormPage2() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Start loading
+
     try {
       await sendToGoogleSpreadsheet(formData, file);
       setSubmitted(true);
       console.log('Data sent to Google Sheets');
     } catch (error) {
       console.error('Error sending data to Google Sheets:', error);
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
 
@@ -77,7 +82,9 @@ function FormPage2() {
 
             <form onSubmit={handleSubmit}>
               <input type="file" accept="image/*" onChange={handleFileChange} />
-              <button type="submit">Submit</button>
+              <button type="submit">
+                {loading ? 'Submitting...' : 'Submit'}
+              </button>
             </form>
           </>
         )}
