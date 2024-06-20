@@ -41,7 +41,7 @@ function FormPage2() {
 
   const generateUPIQRCode = () => {
     const { name } = formData;
-    const pa = '9860617102@axl';
+    const pa = 'OGCS971.07@cmsidfc';
     const pn = name;
     const am = 256.00;
     const timestamp = new Date().getTime(); // Generate a unique timestamp
