@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const FormIntro = () => {
-  const videoUrl = "https://drive.google.com/uc?export=download&id=1Is6IxeO7Nl2GN7B4yyRnytIwD24nSWmr";
+  const videoUrl = "https://drive.google.com/file/d/1Is6IxeO7Nl2GN7B4yyRnytIwD24nSWmr/view?usp=sharing";
 
   return (
     <div className='Intro-container'>
