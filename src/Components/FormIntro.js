@@ -14,8 +14,8 @@ const FormIntro = () => {
       <div className="video-responsive">
         <iframe
           src={videoUrl}
-          width="853"
-          height="480"
+          width="950"
+          height="550"
           allow="autoplay"
           frameBorder="0"
           allowFullScreen
