@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './FormIntro.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import './FormIntro.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const FormIntro = () => {
   const videoUrl = "https://drive.google.com/file/d/1Is6IxeO7Nl2GN7B4yyRnytIwD24nSWmr/preview";
@@ -12,10 +12,15 @@ const FormIntro = () => {
       <img src="./logo.webp" alt='logo' className='ogcs-logo'/>
       
       <div className="video-responsive">
-        <video width="853" height="480" controls>
-          <source src={videoUrl} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <iframe
+          src={videoUrl}
+          width="853"
+          height="480"
+          allow="autoplay"
+          frameBorder="0"
+          allowFullScreen
+          title="Intro Video"
+        ></iframe>
       </div>
 
       <div className='Why-Course'>
