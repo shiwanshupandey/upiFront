@@ -5,22 +5,20 @@ import FormData from "./FormData.json";
 import Button from './Button/Button';
 
 const FormIntro = () => {
-  const videoUrl = "https://drive.google.com/file/d/1Is6IxeO7Nl2GN7B4yyRnytIwD24nSWmr/preview";
+  const imageUrl = "./Photouse.png"; // Replace with the path to your image
 
   return (
     <div className='Intro-container'>
       {/* <img src="./logo.webp" alt='logo' className='ogcs-logo'/> */}
       
-      <div className="video-responsive">
-        <iframe
-          src={videoUrl}
-          width="1500"
-          height="600"
-          allow="autoplay"
-          frameBorder="0"
-          allowFullScreen
-          title="Intro Video"
-        ></iframe>
+      <div className="image-responsive">
+        <img
+          src={imageUrl}
+          alt="Intro Image"
+          width="800"
+          height="700"
+          className="intro-image"
+        />
       </div>
 
       <div className='Why-Course'>
