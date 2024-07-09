@@ -43,7 +43,7 @@ function FormPage2() {
     const { name } = formData;
     const pa = 'OGCS971.07@cmsidfc';
     const pn = name;
-    const am = 256.00;
+    const am = 199.00;
     const timestamp = new Date().getTime(); // Generate a unique timestamp
     return `upi://pay?pa=${pa}&pn=${pn}&am=${am}&tr=${timestamp}`; // Include timestamp in the UPI link
   };
