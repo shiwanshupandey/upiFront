@@ -79,20 +79,58 @@
             ]
           }
         ]
+      }
+    ],
+    "faqs":[
+      {
+        "question":"Why attend this program?",
+        "answer": "The strategies in this program will enhance your interview confidence."
+
       },
       {
-        "heading": "Payment Mode",
-        "fields": [
-          {
-            "label": "Payment Mode:",
-            "type": "checkbox",
-            "name": "paymentMode",
-            "options": [
-              { "value": "Bank Transfer", "text": "Bank Transfer" },
-              { "value": "UPI", "text": "UPI" }
-            ]
-          }
-        ]
+        "question":"What benefits can be gained from this program?",
+        "answer": "Completing this program will enable you to handle interviews with confidence."
+
+      },
+      {
+        "question":"How do I get started with this program?",
+        "answer": "It's simple! Just click the link and join our online session."
+
+      },
+      {
+        "question":"How can I present myself?",
+        "answer": "After completing this training program, you will be able to effectively present your experience and knowledge."
+
+      },
+      {
+        "question":"What should I prepare for this training program?",
+        "answer": "Bring a notebook and pen for essential notetaking during the sessions."
+
+      },
+      {
+        "question":"How long does this program session last?",
+        "answer": "It's a 3-hour program that will contribute to your lifelong growth."
+
+      },
+      {
+        "question":"How do I get the link to join the program?",
+        "answer": "After payment, we'll create a group to share session links and provide motivational notifications and updates."
+
+      },
+      {
+        "question":"Should I contact you if I have Questions?",
+        "answer": "Feel free to contact us at +91-9967610135 if you have any Questions. We are here to assist you throughout the program."
+
+      },
+      {
+        "question":"Is there a specific dress code for the program?",
+        "answer": "There is no strict dress code, but we recommend wearing business casual attire. "
+
+      },
+      {
+        "question":"Can anyone join?",
+        "answer": "Yes, this program is open to candidates at all educational levels who are seeking job opportunities and career growth."
+
       }
     ]
   }

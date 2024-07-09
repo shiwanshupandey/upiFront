@@ -69,7 +69,7 @@ function FormPage2() {
 
   return (
     <div>
-      <Parallax strength={800} bgImage="/parallaxeffeect.jpg" className="parallax-section">
+      <Parallax strength={-700} bgImage="/Parallaxeffeect.jpeg" className="parallax-section">
         {submitted ? (
           <div className="confirmation-message">
             <img src="./FormDone.jpg" alt="Success Image" className="success-image" />

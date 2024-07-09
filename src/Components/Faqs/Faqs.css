@@ -1,0 +1,95 @@
+.heading-Faqs {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .faqs-container {
+    max-width: 1200px; /* Adjust container width as needed */
+    margin: 0 auto; /* Align the container in the center */
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+  
+  .faq-item {
+    margin-bottom: 22px;
+  }
+  
+  .question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border-bottom: 1px solid #ddd;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    transition: background-color 0.3s ease;
+    font-size: 23px;
+    font-weight: 500;
+    color: #12233D;
+  }
+  
+  .question-icon {
+    margin-right: 10px; /* Adjust margin to create space between the icon and the question text */
+    color: #d62c2c; /* Set the color of the question icon */
+    font-size: 18px; /* Adjust the font size of the question icon */
+  }
+  
+  .question:hover {
+    color: #d62c2c;
+  }
+  
+  .question.active {
+    color: #d62c2c;
+    border-bottom: 1px solid #d62c2c;
+  }
+  
+  .answer {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .icon-question {
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: auto; /* Position the icon on the extreme right */
+  }
+  
+  .icon-question.active {
+    color: #d62c2c; /* Change color to #d62c2c when active */
+  }
+  
+
+  /* Media query for mobile */
+@media (max-width: 767px) {
+    .heading-Faqs {
+      font-size: 30px;
+    }
+    
+    .question {
+      font-size: 15px;
+      text-align: left;
+    }
+    
+    .question-icon {
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .answer{
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+  
+  /* Media query for screens up to 1080px */
+  @media (max-width: 1080px) {
+    .faqs-container {
+      padding: 0 20px; /* Add padding to the container */
+    }
+  }

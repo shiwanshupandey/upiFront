@@ -7,14 +7,16 @@
     justify-content: center;
     overflow: auto; /* add this line to allow scrolling */
     /* remove the height property to allow the container to expand to fit its content */
+    padding-top: 3rem;
+    background-color: #020b36;
   }
   
   .video-responsive {
     position: relative;
     overflow: hidden;
-    padding-top: 28.25%; /* 16:9 Aspect Ratio */
+    padding-top: 40.25%; /* 16:9 Aspect Ratio */
     width: 100%;
-    max-width: 950px;
+    max-width: 1500px;
     margin-bottom: 2rem;
   }
   
@@ -33,37 +35,38 @@
     width: 100%;
     height: 100%;
   }
-  
-  .Link-pages {
+
+  .button-Register-container {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 20px 0;
-    color: #333;
-    text-decoration: none;
-    font-size: 25px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: auto; /* Full height of the viewport or parent container */
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
   
-  .Link-pages:hover {
-    color: #007BFF;
-    text-decoration: underline;
+  .button-Register {
+    margin: 0;
+    /* Add any other styling you need for the button */
   }
   
-  .Link-pages .fa-icon {
-    margin-right: 5px;
+  .EventDetails {
+    margin: 20px 2rem;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 3rem;
   }
 
-  .ogcs-logo {
-    width: 200px; /* adjust as needed */
-    height: auto; /* maintain aspect ratio */
-    display: block; /* center the image */
-    margin: 20px auto; /* add vertical margin and center the image */
-    margin-bottom: 2rem;
+  .EventDetails strong{
+    margin-bottom: 1rem;
+    margin-right: 10px;
   }
-  
+
+
 
   .Why-Course {
-    padding: 20px;
+    padding: 40px;
     background-color: #fff; /* adjust as needed */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adjust as needed */
     margin: 20px 0;
@@ -72,16 +75,36 @@
   }
   
   .WhyHeading {
-    font-size: 24px; /* adjust as needed */
-    color: #333; /* adjust as needed */
+    font-size: 40px; /* adjust as needed */
+    font-weight: 800;
+    color: #020b36; /* adjust as needed */
     text-align: center;
+  }
+
+  .WhyHeading2{
+    font-size: 25px; /* adjust as needed */
+    font-weight: 800;
+    color: #020b36; /* adjust as needed */
+    text-align: left;
+    padding: 5px 1.8rem;
+  }
+
+  .WhyTrainer{
+    font-size: 18px; /* adjust as needed */
+    font-weight: 500;
+    color: #333; /* adjust as needed */
+    line-height: 1.5; /* adjust as needed */
+    text-align: justify;
+    padding: 3%;
   }
   
   .WhyPara {
     font-size: 16px; /* adjust as needed */
-    color: #666; /* adjust as needed */
+    font-weight: 300;
+    color: #000; /* adjust as needed */
     line-height: 1.5; /* adjust as needed */
     text-align: justify;
+    padding: 3%;
   }
   /* New CSS for 786px viewport */
   
@@ -92,7 +115,7 @@
 
   .video-responsive {
     max-width: 100%; /* adjust as needed */
-    padding-top: 60.625%; /* adjust for new aspect ratio if needed */
+    padding-top: 90.625%; /* adjust for new aspect ratio if needed */
   }
 
   .Link-pages {
@@ -117,5 +140,25 @@
 
   .WhyPara {
     font-size: 14px; /* reduce font size on smaller screens */
+  }
+
+  .EventDetails {
+    margin: 20px 1rem;
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .button-Register-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .WhyHeading2{
+    font-size: 18px;
+    padding: 2px 1rem;
+  }
+
+  .WhyTrainer{
+    font-size: 13px;
   }
 }

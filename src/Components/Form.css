@@ -8,7 +8,7 @@
 }
 
 .parallax-section .parallax-bg {
-  background-image: url('../../public//parallaxeffeect.jpg'); /* Replace with your actual image path */
+  background-image: url('../../public/Parallaxeffeect.jpeg'); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Ensures the parallax effect */
@@ -21,6 +21,17 @@
   z-index: -1; /* Ensure the parallax stays in the background */
   opacity: 0.3; /* Adjust the opacity as needed */
 }
+
+
+.ogcs-logo {
+  width: 300px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center the image horizontally */
+  filter: brightness(2); /* Apply brightness filter */
+}
+
+
 
 
 form {
@@ -57,12 +68,16 @@ form label {
 }
 
 .form-background {
-  background-image: url('../../public/imageForm.jpg');
+  background-image: url('../../public/imageForm.jpeg');
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 500px;
   position: relative;
+  border-radius: 20px; /* Add border radius */
+  overflow: hidden; /* Ensure child elements do not overflow the border radius */
+  margin-bottom: 3rem;
 }
+
 
 .form-overlay {
   position: absolute;
@@ -77,11 +92,12 @@ form label {
   align-items: center;
   color: white;
   text-align: center;
+  
 }
 
 .form-headingtext {
-  font-size: 3em;
-  margin: 0;
+  font-size: 3.4em;
+  margin: 20px;
 }
 
 .form-description {
@@ -217,7 +233,7 @@ form button:hover {
   }
   
   .parallax-section .parallax-bg {
-    background-image: url('../../public//parallaxeffeect.jpg'); /* Replace with your actual image path */
+    background-image: url('../../public/Parallaxeffeect.jpeg'); /* Replace with your actual image path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Ensures the parallax effect */

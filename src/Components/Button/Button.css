@@ -1,0 +1,67 @@
+/* Base styles for the button */
+.buttonNew {
+    width: 300px;
+    background-color: #D2E825;
+    color: black;
+    padding: 25px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid #D2E825;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  /* Hover styles for the button */
+  .buttonNew:hover {
+    background-color: #020B36;
+    color: #D2E825;
+    border: 2px solid #D2E825;
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+  
+  /* Base styles for the icon */
+  .icon-HomeIntro {
+    margin-left: 10px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover styles for the icon */
+  .buttonNew:hover .icon-HomeIntro {
+    transform: translateX(5px);
+    text-decoration: none;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .buttonNew {
+      padding: 14px 25px; /* Adjust padding for smaller screens */
+      font-size: 15px; /* Adjust font size for smaller screens */
+      width: 90%;
+    }
+  
+    .icon-HomeIntro {
+      font-size: 1em; /* Adjust icon size for smaller screens */
+      margin-left: 8px; /* Adjust margin for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .buttonNew {
+     
+      font-size: 20px; /* Further adjust font size for very small screens */
+      width: 90%; /* Further adjust width for very small screens */
+      margin: 0 auto; /* Center button for very small screens */
+      align-items: center;
+    }
+  
+    .icon-HomeIntro {
+      font-size: 0.9em; /* Further adjust icon size for very small screens */
+      margin-left: 8px; /* Further adjust margin for very small screens */
+    }
+  }

@@ -68,11 +68,13 @@ function FormPage1() {
   };
 
   return (
-    <Parallax strength={800} bgImage="/parallaxeffeect.jpg" className="parallax-section">
+    <Parallax strength={-700} bgImage="/Parallaxeffeect.jpeg" className="parallax-section">
       
       <form onSubmit={handleSubmit} noValidate>
+       
       <div className="form-background">
         <div className="form-overlay">
+        <img src="./logo.webp" alt='logo' className='ogcs-logo'/>
           <h1 className='form-headingtext'>Mastery Interview Success Program</h1>
           <p className='form-description'>Please fill out the form below to complete your application.</p>
         </div>
