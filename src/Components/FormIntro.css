@@ -11,29 +11,17 @@
     background-color: #020b36;
   }
   
-  .video-responsive {
-    position: relative;
-    overflow: hidden;
-    padding-top: 40.25%; /* 16:9 Aspect Ratio */
-    width: 100%;
-    max-width: 1500px;
-    margin-bottom: 2rem;
+  .image-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
   }
   
-  .video-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .video-responsive video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .intro-image {
+
+    border-radius: 20px;
   }
 
   .button-Register-container {
@@ -161,4 +149,19 @@
   .WhyTrainer{
     font-size: 13px;
   }
+
+  .image-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .intro-image {
+    margin-top: 2rem;
+    width: 400px; /* Fixed width */
+    height: 450px;
+    border-radius: 20px; /* Rounded corners */
+  }
+  
 }
