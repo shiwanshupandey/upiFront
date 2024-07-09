@@ -9,7 +9,6 @@ const FormIntro = () => {
 
   return (
     <div className='Intro-container'>
-      {/* <img src="./logo.webp" alt='logo' className='ogcs-logo'/> */}
       
       <div className="image-responsive">
         <img
