@@ -26,6 +26,12 @@
             "type": "email",
             "name": "email",
             "placeholder": "Enter your email address"
+          },
+          {
+            "label": "UPI id:",
+            "type": "text",
+            "name": "UPI",
+            "placeholder": "Enter your UPI id"
           }
         ]
       },
