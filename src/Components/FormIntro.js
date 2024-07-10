@@ -32,12 +32,8 @@ const FormIntro = () => {
           <strong>Training Fee:</strong> ₹199/-<br/>
           <strong>Program Language:</strong> A mix of English and Hindi for better understanding, ensuring it directly touches your heart and mind.
         </p>
-
-        <h1 className='WhyHeading2'>Know Your Trainer..!!</h1>
-        <p className='WhyTrainer'>Baba Ohol – A Civil Engineer turned Corporate Trainer and Motivational Speaker, bringing 31 years of rich experience in the Construction Industry, working with diverse organizations at various levels across India and abroad. Having conducted countless interviews and interacted with numerous individuals, he has designed this program for your success: "Mastery in Interview Success."</p>
-        
         <h1 className='WhyHeading2'>Program Insight :</h1>
-        <p className='WhyPara'>Participants will master the art of confidently handling interviews and presenting themselves with impact. They will learn to maintain assertive body language and employ powerful strategies to overcome various interview challenges. This program will also focus on effectively showcasing their skills and knowledge, empowering participants to highlight their strengths compellingly during interviews.</p>
+        <p className='WhyTrainer'>Participants will master the art of confidently handling interviews and presenting themselves with impact. They will learn to maintain assertive body language and employ powerful strategies to overcome various interview challenges. This program will also focus on effectively showcasing their skills and knowledge, empowering participants to highlight their strengths compellingly during interviews.</p>
         
         <Faqs data={FormData.faqs}/>
         {/* <a href="https://www.ogcs.co.in/about-us" target="_blank" rel="noopener noreferrer" className='Link-pages'><FontAwesomeIcon icon={faArrowRight} /> About Us</a> */}
