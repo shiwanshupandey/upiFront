@@ -17,7 +17,8 @@ function FormPage1() {
     permanentAddress: '',
     educationalDetails: '',
     totalJobExperience: '',
-    paymentMode: []
+    paymentMode: [],
+    UPI: ''
   });
   const [errors, setErrors] = useState({});
 
