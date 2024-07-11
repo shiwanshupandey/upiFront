@@ -8,7 +8,7 @@
 }
 
 .parallax-section .parallax-bg {
-  background-image: url('../../public/Parallaxeffeect.jpeg'); /* Replace with your actual image path */
+  background-image: url('../../public/Parallaxeffeect.jpeg'); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Ensures the parallax effect */
@@ -68,7 +68,7 @@ form label {
 }
 
 .form-background {
-  background-image: url('../../public/imageForm.jpeg');
+  background-image: url('../../public/Parallaxeffeect.jpeg');
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -283,7 +283,7 @@ form button:hover {
   }
   
   .form-background {
-    background-image: url('../../public/imageForm.jpg');
+    background-image: url('../../public/Parallaxeffeect.jpeg');
     background-size: cover;
     background-position: center;
     height: 300px;
