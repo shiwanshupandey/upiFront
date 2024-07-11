@@ -1,101 +1,110 @@
-/* Existing CSS */
-
 .Intro-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: auto; /* add this line to allow scrolling */
-    /* remove the height property to allow the container to expand to fit its content */
-    padding-top: 3rem;
-    background-color: #020b36;
-  }
-  
-  .image-responsive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto; /* add this line to allow scrolling */
+  /* remove the height property to allow the container to expand to fit its content */
+  padding-top: 3rem;
+  background-color: #020b36;
+}
 
-  }
-  
-  .intro-image {
+.image-responsive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-    border-radius: 20px;
-  }
+.intro-image {
+  border-radius: 20px;
+}
 
-  .button-Register-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: auto; /* Full height of the viewport or parent container */
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-  }
-  
-  .button-Register {
-    margin: 0;
-    /* Add any other styling you need for the button */
-  }
-  
-  .EventDetails {
-    margin: 20px 2rem;
-    font-size: 1.2em;
-    line-height: 1.5;
-    text-align: left;
-    margin-bottom: 3rem;
-  }
+.button-Register-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: auto; /* Full height of the viewport or parent container */
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
 
-  .EventDetails strong{
-    margin-bottom: 1rem;
-    margin-right: 10px;
-  }
+.button-Register {
+  margin: 0;
+  /* Add any other styling you need for the button */
+}
 
+.EventDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Grid with two columns */
+  gap: 20px; /* Adjust gap between items */
+  font-size: 1em;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem; /* Added margin on the right for symmetry */
+}
 
+.detail-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ /* Optional: Add background color */
+  padding: 10px; /* Optional: Add padding */
+  border-radius: 10px; /* Optional: Add border radius */
+}
 
-  .Why-Course {
-    padding: 40px;
-    background-color: #fff; /* adjust as needed */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adjust as needed */
-    margin: 20px 0;
-    border-radius: 15px; /* adjust as needed */
-    width: 50%; /* adjust as needed */
-  }
-  
-  .WhyHeading {
-    font-size: 40px; /* adjust as needed */
-    font-weight: 800;
-    color: #020b36; /* adjust as needed */
-    text-align: center;
-  }
+.detail-item img.icon-FormIntro {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
 
-  .WhyHeading2{
-    font-size: 25px; /* adjust as needed */
-    font-weight: 800;
-    color: #020b36; /* adjust as needed */
-    text-align: left;
-    padding: 5px 1.8rem;
-  }
+.DetailsEventHeading {
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 10px;
+}
 
-  .WhyTrainer{
-    font-size: 18px; /* adjust as needed */
-    font-weight: 500;
-    color: #333; /* adjust as needed */
-    line-height: 1.5; /* adjust as needed */
-    text-align: justify;
-    padding: 3%;
-  }
-  
-  .WhyPara {
-    font-size: 16px; /* adjust as needed */
-    font-weight: 300;
-    color: #000; /* adjust as needed */
-    line-height: 1.5; /* adjust as needed */
-    text-align: justify;
-    padding: 3%;
-  }
-  /* New CSS for 786px viewport */
-  
+.DetailsEventPara {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #333;
+  text-align: left;
+}
+
+.Why-Course {
+  padding: 40px;
+  background-color: #fff; /* adjust as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adjust as needed */
+  margin: 20px 0;
+  border-radius: 15px; /* adjust as needed */
+  width: 50%; /* adjust as needed */
+}
+
+.WhyHeading {
+  font-size: 40px; /* adjust as needed */
+  font-weight: 800;
+  color: #020b36; /* adjust as needed */
+  text-align: center;
+}
+
+.WhyHeading2 {
+  font-size: 25px; /* adjust as needed */
+  font-weight: 800;
+  color: #020b36; /* adjust as needed */
+  text-align: left;
+  padding: 5px 1.8rem;
+}
+
+.WhyPara {
+  font-size: 18px; /* adjust as needed */
+  font-weight: 500;
+  color: #333; /* adjust as needed */
+  line-height: 1.5; /* adjust as needed */
+  text-align: justify;
+  padding: 3%;
+}
+
 @media (max-width: 786px) {
   .Intro-container {
     padding: 10px; /* add some padding on smaller screens */
@@ -131,9 +140,32 @@
   }
 
   .EventDetails {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px; /* Adjust gap between items */
     margin: 20px 1rem;
+    font-size: 0.9em; /* Adjust font size */
+  }
+
+  .detail-item {
+    padding: 8px; /* Adjust padding */
+    border-radius: 8px; /* Adjust border radius */
+  }
+
+  .detail-item img.icon-FormIntro {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
+
+  .DetailsEventHeading {
     font-size: 1em;
-    line-height: 1.4;
+    margin-right: 8px;
+  }
+
+  .DetailsEventPara {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #333;
     text-align: left;
   }
 
