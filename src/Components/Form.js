@@ -18,7 +18,7 @@ function FormPage1() {
     educationalDetails: '',
     totalJobExperience: '',
     paymentMode: [],
-    UPI: ''
+    UPI: '',
   });
   const [errors, setErrors] = useState({});
 
@@ -69,13 +69,12 @@ function FormPage1() {
   };
 
   return (
-    <Parallax strength={-700} bgImage="/Parallaxeffeect.jpeg" className="parallax-section">
+    <Parallax strength={1100} bgImage="/photo2.webp" className="parallax-section">
       
       <form onSubmit={handleSubmit} noValidate>
        
       <div className="form-background">
         <div className="form-overlay">
-        <img src="./logo.webp" alt='logo' className='ogcs-logo'/>
           <h1 className='form-headingtext'>Mastery Interview Success Program</h1>
           <p className='form-description'>Please fill out the form below to complete your application.</p>
         </div>
