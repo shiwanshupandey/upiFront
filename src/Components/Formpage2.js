@@ -63,16 +63,16 @@ function FormPage2() {
     } catch (error) {
       console.error('Error sending data to Google Sheets:', error);
     } finally {
-      setLoading(false); // Stop loading
+      setLoading(false); 
     }
   };
 
   return (
     <div>
-      <Parallax strength={-700} bgImage="/Parallaxeffeect.jpeg" className="parallax-section">
+      <Parallax strength={300} bgImage="/photo2.webp" className="parallax-section">
         {submitted ? (
           <div className="confirmation-message">
-            <img src="./FormDone.jpg" alt="Success Image" className="success-image" />
+            <img src="./FormDone.webp" alt="Success Image" className="success-image" />
             <h2>Form Submitted Successfully!</h2>
             <Link to="/page1" className="submit-another-link">Submit Another Form</Link>
           </div>
