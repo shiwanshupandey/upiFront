@@ -69,10 +69,10 @@ function FormPage2() {
 
   return (
     <div>
-      <Parallax strength={300} bgImage="/photo2.webp" className="parallax-section">
+      <Parallax strength={100} bgImage="/background.jpg" className="parallax-section2">
         {submitted ? (
           <div className="confirmation-message">
-            <img src="./FormDone.webp" alt="Success Image" className="success-image" />
+            <img src="./FormDone.webp" alt="SuccessImage" className="success-image" />
             <h2>Form Submitted Successfully!</h2>
             <Link to="/page1" className="submit-another-link">Submit Another Form</Link>
           </div>
