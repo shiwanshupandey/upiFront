@@ -22,10 +22,6 @@ const FormIntro = () => {
       </div>
 
       <div className='Why-Course'>
-        <div className="button-Register-container">
-          <Button to="/page1" className="button-Register">Register Now</Button>
-        </div>
-        
         <h1 className='WhyHeading'>Event Details</h1>
         <div className='EventDetails'>
   <div className='detail-item'>
@@ -54,6 +50,9 @@ const FormIntro = () => {
         <p className='WhyPara'>Participants will master the art of confidently handling interviews and presenting themselves with impact. They will learn to maintain assertive body language and employ powerful strategies to overcome various interview challenges. This program will also focus on effectively showcasing their skills and knowledge, empowering participants to highlight their strengths compellingly during interviews.</p>
         
         <Faqs data={FormData.faqs}/>
+<div className="button-Register-container">
+          <Button to="/page1" className="button-Register">Register Now</Button>
+        </div>
         {/* <a href="https://www.ogcs.co.in/about-us" target="_blank" rel="noopener noreferrer" className='Link-pages'><FontAwesomeIcon icon={faArrowRight} /> About Us</a> */}
       </div>
     </div>
