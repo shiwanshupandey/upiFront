@@ -21,7 +21,10 @@ const FormIntro = () => {
         />
       </div>
 
+            
+
       <div className='Why-Course'>
+            <Button to="/page1" className="button-Register">Register Now</Button>
         <h1 className='WhyHeading'>Event Details</h1>
         <div className='EventDetails'>
   <div className='detail-item'>
