@@ -121,11 +121,6 @@
     align-items: flex-start; /* align to the start */
   }
 
-  .ogcs-logo {
-    width: 150px; /* adjust as needed */
-    margin: 10px auto; /* reduce vertical margin and center the image */
-  }
-
   .Why-Course {
     width: 100%; /* make the course container take up the full width */
     padding: 10px; /* reduce padding on smaller screens */
