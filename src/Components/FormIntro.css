@@ -5,7 +5,6 @@
   justify-content: center;
   overflow: auto; /* add this line to allow scrolling */
   /* remove the height property to allow the container to expand to fit its content */
-  padding-top: 3rem;
   background-color: #020b36;
 }
 
@@ -107,12 +106,12 @@
 
 @media (max-width: 786px) {
   .Intro-container {
-    padding: 10px; /* add some padding on smaller screens */
+    padding: 13px; /* add some padding on smaller screens */
   }
 
   .video-responsive {
     max-width: 100%; /* adjust as needed */
-    padding-top: 90.625%; /* adjust for new aspect ratio if needed */
+    padding-top: 85%; /* adjust for new aspect ratio if needed */
   }
 
   .Link-pages {

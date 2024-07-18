@@ -26,29 +26,18 @@
             "type": "email",
             "name": "email",
             "placeholder": "Enter your email address"
-          },
-          {
-            "label": "UPI id:",
-            "type": "text",
-            "name": "UPI",
-            "placeholder": "Enter your UPI id"
           }
+          
         ]
       },
       {
         "heading": "Address Information",
         "fields": [
           {
-            "label": "Correspondence Address:",
+            "label": "Address:",
             "type": "text",
-            "name": "correspondenceAddress",
-            "placeholder": "Enter your correspondence address"
-          },
-          {
-            "label": "Permanent Address:",
-            "type": "text",
-            "name": "permanentAddress",
-            "placeholder": "Enter your permanent address"
+            "name": "Address",
+            "placeholder": "Enter your Address"
           }
         ]
       },
