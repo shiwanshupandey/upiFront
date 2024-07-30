@@ -99,7 +99,7 @@ function FormPage1() {
     const { name } = formDataState;
     const pa = 'OGCS971.07@cmsidfc'; // Your UPI ID
     const pn = name || 'Applicant'; // Use the applicant's name or a default
-    const am = 199.00; // Amount
+    const am = 1.00; // Amount
     const timestamp = new Date().getTime();
     return `upi://pay?pa=${pa}&pn=${pn}&am=${am}&tr=${timestamp}`;
   };
